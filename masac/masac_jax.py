@@ -266,6 +266,7 @@ def main():
     run_name = f"{args.exp_name}__{args.seed}__{int(time.time())}"
 
     if args.track:
+        print(f"wandb_project_name={args.wandb_project_name} wandb_entity={args.wandb_entity}")
         wandb.init(
             project=args.wandb_project_name,
             entity=args.wandb_entity,
