@@ -17,7 +17,7 @@ import jax
 import jax.numpy as jnp
 import numpy as np
 import optax
-import orbax.checkpoint
+#import orbax.checkpoint
 import wandb
 from etils import epath
 from flax.training.train_state import TrainState
@@ -570,9 +570,11 @@ def main():
     # SAVING MODEL PARAMETERS
     directory = epath.Path("trained_model")
     actor_dir = directory / "actor"
-    print("Saving actor to ", actor_dir)
-    ckptr = orbax.checkpoint.PyTreeCheckpointer()
-    ckptr.save(actor_dir, actor_state, force=True)
+    
+    #TODO: Serialization
+    #print("Saving actor to ", actor_dir)
+    #ckptr = orbax.checkpoint.PyTreeCheckpointer()
+    #ckptr.save(actor_dir, actor_state, force=True)
 
     env.close()
     wandb.finish()
