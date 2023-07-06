@@ -3,9 +3,9 @@
 
 MASIC IPU is a fork of the MASAC repository available at: https://github.com/ffelten/MASAC
 
-The objective of MASIC IPU is to enhance the performance of MASAC by leveraging Graphcore IPU technology.
+The objective of MASIC IPU is to improve the MASAC efficiency by leveraging Graphcore IPU technology.
 
-The updates made to MASIC IPU are relatively minor in comparison to the official branch.
+The code updates made to MASIC IPU are relatively minor in comparison to the official branch.
 
 The library dependencies on the Poplar SDK 3.0 are the following :
 
@@ -29,5 +29,5 @@ import sys
 !pip install tensorboard==2.13.0
 ```
 
-Regrettably, the development is currently on hold as it lacks the advantage when compared to NVIDIA GPUs. Nonetheless, there is potential for IPU to exhibit significantly faster performance in certain applications. We anticipate future advancements in Reinforcement Learning agents and Simulator implementation with FLAX built on top of JAX+IPU.
+Regrettably, the development is currently on hold as it lacks speed up when compared to NVIDIA GPUs. Nonetheless, there is potential for IPU to exhibit significantly faster performance when JAX+IPU will mature.
 
