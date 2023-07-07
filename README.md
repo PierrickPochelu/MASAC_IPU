@@ -3,9 +3,7 @@
 
 MASIC IPU is a fork of the MASAC repository available at: https://github.com/ffelten/MASAC
 
-The objective of MASIC IPU is to improve the MASAC efficiency by leveraging Graphcore IPU technology.
-
-The code updates made to MASIC IPU are relatively minor in comparison to the official branch.
+The objective of MASAC IPU is to improve the MASAC efficiency by leveraging Graphcore IPU technology.
 
 The library dependencies on the Poplar SDK 3.0 are the following :
 
