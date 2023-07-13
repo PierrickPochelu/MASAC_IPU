@@ -28,6 +28,14 @@ from tqdm import tqdm
 from ma_buffer import Experience, MAReplayBuffer
 
 
+
+from jax.config import config
+# Use CPU as default backend for initialization.
+config.FLAGS.jax_platforms = "cpu,ipu"
+config.FLAGS.jax_ipu_device_count = 1
+
+
+
 def parse_args():
     # fmt: off
     parser = argparse.ArgumentParser()
